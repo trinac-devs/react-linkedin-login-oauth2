@@ -21,16 +21,16 @@ const generateRandomString = (length = 20) => {
 const LINKEDIN_OAUTH2_STATE = 'linkedin_oauth2_state';
 
 export class LinkedIn extends Component {
-  static propTypes = {
-    className: PropTypes.string,
-    onFailure: PropTypes.func.isRequired,
-    onSuccess: PropTypes.func.isRequired,
-    onClick: PropTypes.func,
-    disabled: PropTypes.bool,
-    clientId: PropTypes.string.isRequired,
-    redirectUri: PropTypes.string.isRequired,
-    renderElement: PropTypes.func,
-  };
+  // static propTypes = {
+  //   className: PropTypes.string,
+  //   onFailure: PropTypes.func.isRequired,
+  //   onSuccess: PropTypes.func.isRequired,
+  //   onClick: PropTypes.func,
+  //   disabled: PropTypes.bool,
+  //   clientId: PropTypes.string.isRequired,
+  //   redirectUri: PropTypes.string.isRequired,
+  //   renderElement: PropTypes.func,
+  // };
 
   componentWillUnmount() {
     window.removeEventListener('message', this.receiveMessage, false);
